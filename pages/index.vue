@@ -7,7 +7,7 @@
             type="text"
             class="p-2 w-2/3 rounded bg-gray-800 text-white"
             placeholder="Tìm kiếm phim..."
-          />
+          >
         </div>
       </header>
   
@@ -16,7 +16,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <!-- Card Phim -->
           <div class="bg-gray-800 p-4 rounded-lg">
-            <img src="https://via.placeholder.com/300x450" alt="Phim" class="w-full h-auto rounded-t-lg" />
+            <img src="https://via.placeholder.com/300x450" alt="Phim" class="w-full h-auto rounded-t-lg" >
             <h3 class="mt-4 text-xl font-semibold">Tên Phim</h3>
             <p class="text-sm text-gray-400">Thể loại: Hành động, Phiêu lưu</p>
           </div>
