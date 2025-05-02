@@ -9,7 +9,7 @@
               src="/placeholder.svg?height=40&width=40"
               alt="MoonPlay"
               class="w-10 h-10 rounded-full"
-            />
+            >
           </NuxtLink>
           <nav class="hidden md:flex space-x-6">
             <NuxtLink to="/gioi-thieu" class="text-white hover:text-[#dd003f]">
@@ -43,12 +43,12 @@
 
     <!-- Hero Banner -->
     <div class="relative h-[400px] mb-8">
-      <div class="absolute inset-0 bg-gradient-to-r from-[#06121e]/80 to-transparent z-10"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-[#06121e]/80 to-transparent z-10"/>
       <img 
         src="/placeholder.svg?height=400&width=1200" 
         alt="DUTY AFTER SCHOOL" 
         class="w-full h-full object-cover"
-      />
+      >
       <div class="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16">
         <h1 class="text-5xl font-bold mb-2 text-white tracking-wider">DUTY</h1>
         <h2 class="text-3xl font-bold mb-6 text-white">AFTER SCHOOL</h2>
@@ -68,7 +68,7 @@
             :src="`/placeholder.svg?height=200&width=400`" 
             :alt="`Hot Movie ${i}`" 
             class="w-full h-[180px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Movie Title {{ i }}</h3>
@@ -94,14 +94,14 @@
               :src="`/placeholder.svg?height=150&width=100`" 
               :alt="`Promo Movie ${i}`" 
               class="w-[80px] h-[120px] rounded-md shadow-lg"
-            />
+            >
           </div>
         </div>
         <div class="absolute -right-4 top-1/2 -translate-y-1/2">
-          <div class="w-16 h-16 rounded-full bg-yellow-300 opacity-70"></div>
+          <div class="w-16 h-16 rounded-full bg-yellow-300 opacity-70"/>
         </div>
         <div class="absolute right-20 bottom-2">
-          <div class="w-8 h-8 rounded-full bg-yellow-300 opacity-70"></div>
+          <div class="w-8 h-8 rounded-full bg-yellow-300 opacity-70"/>
         </div>
       </div>
     </section>
@@ -118,7 +118,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Top Movie ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Movie Title {{ i }}</h3>
@@ -137,7 +137,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Thai Movie ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Thai Movie {{ i }}</h3>
@@ -156,7 +156,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Crime Documentary ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Crime Documentary {{ i }}</h3>
@@ -175,7 +175,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Mystery Comedy ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Mystery Comedy {{ i }}</h3>
@@ -194,7 +194,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Korean Movie ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Korean Movie {{ i }}</h3>
@@ -213,7 +213,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Anime ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Anime {{ i }}</h3>
@@ -232,7 +232,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Sci-Fi Movie ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Sci-Fi Movie {{ i }}</h3>
@@ -251,7 +251,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`Horror Movie ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Horror Movie {{ i }}</h3>
@@ -273,7 +273,7 @@
             :src="`/placeholder.svg?height=300&width=400`" 
             :alt="`Special Movie ${i}`" 
             class="w-full h-[300px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">Special Movie {{ i }}</h3>
@@ -290,7 +290,7 @@
           src="/placeholder.svg?height=150&width=1200" 
           alt="THE DEAL" 
           class="w-full h-full object-cover"
-        />
+        >
         <div class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent flex items-center px-8">
           <div>
             <h2 class="text-4xl font-bold mb-2">THE DEAL</h2>
@@ -311,7 +311,7 @@
             :src="`/placeholder.svg?height=150&width=400`" 
             :alt="category" 
             class="w-full h-[150px] object-cover rounded-md brightness-50"
-          />
+          >
           <div class="absolute inset-0 flex items-center justify-center">
             <h3 class="text-xl font-bold">{{ category }}</h3>
           </div>
@@ -328,7 +328,7 @@
             :src="`/placeholder.svg?height=250&width=180`" 
             :alt="`More Movie ${i}`" 
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
               <h3 class="text-sm font-bold">More Movie {{ i }}</h3>
@@ -347,7 +347,7 @@
               src="/placeholder.svg?height=40&width=40"
               alt="MoonPlay"
               class="w-10 h-10 rounded-full mr-2"
-            />
+            >
             <span class="text-lg font-bold">MOONPLAY</span>
           </div>
 

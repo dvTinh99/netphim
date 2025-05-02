@@ -9,7 +9,7 @@
               src="/placeholder.svg?height=40&width=40"
               alt="MoonPlay"
               class="w-10 h-10 rounded-full"
-            />
+            >
           </NuxtLink>
           <nav class="hidden md:flex space-x-6">
             <NuxtLink to="/" class="text-white hover:text-[#dd003f]">
@@ -50,60 +50,8 @@
         <div class="flex-1">
           <!-- Video Player -->
           <div class="relative bg-black rounded-md overflow-hidden mb-6">
-            <img 
-              src="/placeholder.svg?height=500&width=900" 
-              alt="Dragon Ball Super Movie: Broly" 
-              class="w-full aspect-video object-cover"
-            />
+            <HlsPlayer src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" />
             
-            <!-- Video Controls -->
-            <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
-              <div class="flex items-center justify-between mb-2">
-                <div class="flex items-center gap-4">
-                  <button class="text-white hover:text-[#dd003f]">
-                    <Play class="w-6 h-6" />
-                  </button>
-                  <button class="text-white hover:text-[#dd003f]">
-                    <Pause class="w-6 h-6" />
-                  </button>
-                  <button class="text-white hover:text-[#dd003f]">
-                    <RotateCcw class="w-5 h-5" />
-                  </button>
-                  <button class="text-white hover:text-[#dd003f]">
-                    <RefreshCw class="w-5 h-5" />
-                  </button>
-                  <button class="text-white hover:text-[#dd003f]">
-                    <Volume2 class="w-5 h-5" />
-                  </button>
-                </div>
-                <div class="flex items-center gap-3">
-                  <button class="text-white hover:text-[#dd003f]">
-                    <Maximize2 class="w-5 h-5" />
-                  </button>
-                  <button class="text-white hover:text-[#dd003f]">
-                    <Settings class="w-5 h-5" />
-                  </button>
-                  <button class="text-white hover:text-[#dd003f]">
-                    <LayoutPanelLeft class="w-5 h-5" />
-                  </button>
-                  <button class="text-white hover:text-[#dd003f]">
-                    <MonitorSmartphone class="w-5 h-5" />
-                  </button>
-                </div>
-              </div>
-              
-              <!-- Progress Bar -->
-              <div class="w-full h-1 bg-gray-600 rounded-full overflow-hidden">
-                <div class="h-full bg-[#dd003f] w-[40%]"></div>
-              </div>
-            </div>
-            
-            <!-- Center Play Button -->
-            <div class="absolute inset-0 flex items-center justify-center">
-              <button class="bg-white/20 rounded-full p-4 backdrop-blur-sm">
-                <Pause class="w-8 h-8 text-white" />
-              </button>
-            </div>
           </div>
           
           <!-- Movie Title and Rating -->
@@ -146,7 +94,7 @@
                 src="/placeholder.svg?height=280&width=190" 
                 alt="Dragon Ball Super Movie: Broly Poster" 
                 class="w-full rounded-md"
-              />
+              >
             </div>
             
             <div class="flex-1">
@@ -189,7 +137,7 @@
                   src="/placeholder.svg?height=48&width=48" 
                   alt="User Avatar" 
                   class="w-full h-full rounded-full"
-                />
+                >
               </div>
               <div class="flex-1">
                 <div class="mb-1">
@@ -209,14 +157,14 @@
                   src="/placeholder.svg?height=48&width=48" 
                   alt="User Avatar" 
                   class="w-full h-full rounded-full"
-                />
+                >
               </div>
               <div class="flex-1">
                 <input 
                   type="text" 
                   placeholder="Viết bình luận của bạn..." 
                   class="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-2 text-white"
-                />
+                >
               </div>
             </div>
           </div>
@@ -231,7 +179,7 @@
                     :src="`/placeholder.svg?height=180&width=320`" 
                     :alt="`Related Movie ${i}`" 
                     class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                  />
+                  >
                   <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                     <div class="p-3 w-full">
                       <h3 class="text-sm font-bold">Related Movie {{ i }}</h3>
@@ -253,7 +201,7 @@
                   :src="`/placeholder.svg?height=180&width=320`" 
                   :alt="`Similar Movie ${i}`" 
                   class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                />
+                >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div class="p-3 w-full">
                     <h3 class="text-sm font-bold">Similar Movie {{ i }}</h3>
@@ -275,7 +223,7 @@
               src="/placeholder.svg?height=40&width=40"
               alt="MoonPlay"
               class="w-10 h-10 rounded-full mr-2"
-            />
+            >
             <span class="text-lg font-bold">MOONPLAY</span>
           </div>
 
@@ -357,6 +305,10 @@ import {
   Youtube, 
   Twitter as TikTok 
 } from 'lucide-vue-next'
+
+// import HlsPlayer from '~/components/HlsPlayer.vue'
+import HlsPlayer from '~/components/PlyrHlsPlayer.vue'
+
 </script>
 
 <style>

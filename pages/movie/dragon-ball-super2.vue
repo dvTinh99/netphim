@@ -9,7 +9,7 @@
               src="/placeholder.svg?height=40&width=40"
               alt="MoonPlay"
               class="w-10 h-10 rounded-full"
-            />
+            >
           </NuxtLink>
           <nav class="hidden md:flex space-x-6">
             <NuxtLink to="/" class="text-white hover:text-[#dd003f]">
@@ -54,7 +54,7 @@
               src="/placeholder.svg?height=500&width=900" 
               alt="Dragon Ball Super Movie: Broly" 
               class="w-full aspect-video object-cover"
-            />
+            >
             
             <!-- Video Controls -->
             <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
@@ -91,7 +91,7 @@
               
               <!-- Progress Bar -->
               <div class="w-full h-1 bg-gray-600 rounded-full overflow-hidden">
-                <div class="h-full bg-[#dd003f] w-[40%]"></div>
+                <div class="h-full bg-[#dd003f] w-[40%]"/>
               </div>
             </div>
             
@@ -143,7 +143,7 @@
                 src="/placeholder.svg?height=280&width=190" 
                 alt="Dragon Ball Super Movie: Broly Poster" 
                 class="w-full rounded-md"
-              />
+              >
             </div>
             
             <div class="flex-1">
@@ -186,7 +186,7 @@
                   src="/placeholder.svg?height=48&width=48" 
                   alt="User Avatar" 
                   class="w-full h-full rounded-full"
-                />
+                >
               </div>
               <div class="flex-1">
                 <div class="mb-1">
@@ -206,14 +206,14 @@
                   src="/placeholder.svg?height=48&width=48" 
                   alt="User Avatar" 
                   class="w-full h-full rounded-full"
-                />
+                >
               </div>
               <div class="flex-1">
                 <input 
                   type="text" 
                   placeholder="Viết bình luận của bạn..." 
                   class="w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-2 text-white"
-                />
+                >
               </div>
             </div>
           </div>
@@ -228,7 +228,7 @@
                     :src="`/placeholder.svg?height=180&width=320`" 
                     :alt="`Related Movie ${i}`" 
                     class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                  />
+                  >
                   <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                     <div class="p-3 w-full">
                       <h3 class="text-sm font-bold">Related Movie {{ i }}</h3>
@@ -250,7 +250,7 @@
                   :src="`/placeholder.svg?height=180&width=320`" 
                   :alt="`Similar Movie ${i}`" 
                   class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                />
+                >
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
                   <div class="p-3 w-full">
                     <h3 class="text-sm font-bold">Similar Movie {{ i }}</h3>
@@ -272,7 +272,7 @@
               src="/placeholder.svg?height=40&width=40"
               alt="MoonPlay"
               class="w-10 h-10 rounded-full mr-2"
-            />
+            >
             <span class="text-lg font-bold">MOONPLAY</span>
           </div>
 

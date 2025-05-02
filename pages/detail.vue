@@ -9,7 +9,7 @@
             src="/placeholder.svg?height=40&width=40"
             alt="MoonPlay"
             class="w-10 h-10 rounded-full"
-            />
+            >
         </NuxtLink>
         <nav class="hidden md:flex space-x-6">
             <NuxtLink to="/" class="text-white hover:text-[#dd003f]">
@@ -46,8 +46,8 @@
 
     <!-- Hero Section with Movie Background -->
     <div class="relative">
-    <div class="absolute inset-0 bg-gradient-to-r from-[#06121e] via-[#06121e]/70 to-transparent z-10"></div>
-    <div class="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center opacity-60"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#06121e] via-[#06121e]/70 to-transparent z-10"/>
+    <div class="absolute inset-0 bg-[url('/placeholder.svg?height=600&width=1200')] bg-cover bg-center opacity-60"/>
 
     <div class="container mx-auto relative z-20 px-4 py-8">
         <div class="flex flex-col md:flex-row gap-8">
@@ -57,7 +57,7 @@
             src="/placeholder.svg?height=400&width=270"
             alt="Dragon Ball Super: Broly"
             class="w-[270px] h-[400px] rounded-lg shadow-lg"
-            />
+            >
             <button class="w-full mt-4 bg-[#dd003f] hover:bg-[#dd003f]/80 text-white py-3 flex items-center justify-center gap-2 rounded-md">
             <Youtube class="w-5 h-5" />
             XEM PHIM
@@ -136,7 +136,7 @@
             :src="actor.image"
             :alt="actor.name"
             class="w-full h-full rounded-full object-cover"
-            />
+            >
         </div>
         <h3 class="font-medium text-sm">{{ actor.name }}</h3>
         <p class="text-gray-400 text-xs">{{ actor.character }}</p>
@@ -153,7 +153,7 @@
             :src="`/placeholder.svg?height=180&width=320`"
             :alt="`Trailer ${index + 1}`"
             class="rounded-md w-full"
-        />
+        >
         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
             <div class="bg-[#dd003f] rounded-full p-3">
             <Youtube class="w-6 h-6" />
@@ -179,7 +179,7 @@
             :src="`/placeholder.svg?height=300&width=200`"
             :alt="`Related Movie ${index + 1}`"
             class="w-full transition-transform group-hover:scale-105"
-            />
+            >
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end">
             <div class="p-3 w-full">
                 <h3 class="text-sm font-bold">Dragon Ball Z: {{ index + 1 }}</h3>
@@ -199,7 +199,7 @@
             src="/placeholder.svg?height=40&width=40"
             alt="MoonPlay"
             class="w-10 h-10 rounded-full mr-2"
-            />
+            >
             <span class="text-lg font-bold">MOONPLAY</span>
         </div>
 
