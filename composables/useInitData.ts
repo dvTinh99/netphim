@@ -5,8 +5,14 @@ export function useInitData() {
   const categoryStore = useCategoryStore()
   const movieStore = useMovieStore()
   onBeforeMount(async () => {
-    categoryStore.fetchCategory()
-    categoryStore.fetchCountry()
-    movieStore.fetchMovieNews()
+    // if (categoryStore.categories.length === 0) {
+    //   await categoryStore.fetchCategory()
+    // }
+    // if (categoryStore.countries.length === 0) {
+    //   await categoryStore.fetchCountry()
+    // }
+    // if (movieStore.news.length === 0) {
+    //   await movieStore.fetchMovieNews()
+    // }
   })
 }

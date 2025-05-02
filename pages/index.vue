@@ -9,7 +9,7 @@
         src="/placeholder.svg?height=400&width=1200"
         alt="DUTY AFTER SCHOOL"
         class="w-full h-full object-cover"
-      />
+      >
       <div
         class="absolute inset-0 z-20 flex flex-col justify-center px-8 md:px-16"
       >
@@ -33,18 +33,20 @@
           :key="`hot-${i}`"
           class="relative group cursor-pointer h-[270px]"
         >
-          <img
-            :src="i.thumb_url"
-            :alt="`Hot Movie ${i}`"
-            class="w-full h-[270px] object-cover rounded-md"
-          />
-          <div
-            class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
-          >
-            <div class="p-3 w-full">
-              <h3 class="text-sm font-bold">{{ i.name }}</h3>
+          <NuxtLink :to="`/movie/${i.slug}`">
+            <img
+              :src="i.thumb_url"
+              :alt="`Hot Movie ${i}`"
+              class="w-full h-[270px] object-cover rounded-md"
+            >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
+            >
+              <div class="p-3 w-full">
+                <h3 class="text-sm font-bold">{{ i.name }}</h3>
+              </div>
             </div>
-          </div>
+          </NuxtLink>
         </div>
       </div>
     </section>
@@ -71,7 +73,7 @@
               :src="`/placeholder.svg?height=150&width=100`"
               :alt="`Promo Movie ${i}`"
               class="w-[80px] h-[120px] rounded-md shadow-lg"
-            />
+            >
           </div>
         </div>
         <div class="absolute -right-4 top-1/2 -translate-y-1/2">
@@ -101,7 +103,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Top Movie ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -126,7 +128,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Thai Movie ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -151,7 +153,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Crime Documentary ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -176,7 +178,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Mystery Comedy ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -201,7 +203,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Korean Movie ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -226,7 +228,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Anime ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -251,7 +253,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Sci-Fi Movie ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -276,7 +278,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`Horror Movie ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -306,7 +308,7 @@
             :src="`/placeholder.svg?height=300&width=400`"
             :alt="`Special Movie ${i}`"
             class="w-full h-[300px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -325,7 +327,7 @@
           src="/placeholder.svg?height=150&width=1200"
           alt="THE DEAL"
           class="w-full h-full object-cover"
-        />
+        >
         <div
           class="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent flex items-center px-8"
         >
@@ -358,7 +360,7 @@
             :src="`/placeholder.svg?height=150&width=400`"
             :alt="category"
             class="w-full h-[150px] object-cover rounded-md brightness-50"
-          />
+          >
           <div class="absolute inset-0 flex items-center justify-center">
             <h3 class="text-xl font-bold">{{ category }}</h3>
           </div>
@@ -379,7 +381,7 @@
             :src="`/placeholder.svg?height=250&width=180`"
             :alt="`More Movie ${i}`"
             class="w-full h-[250px] object-cover rounded-md"
-          />
+          >
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
@@ -394,7 +396,7 @@
 </template>
 
 <script setup lang="ts">
-import type { Movie } from '~/entities/Movie';
+import type { Movie } from '~/entities/Movie'
 import { useMovieStore } from '~/stores'
 const movieStore = useMovieStore()
 
