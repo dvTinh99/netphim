@@ -1,1 +1,3 @@
-<template>tinh doan foooter</template>
+<template>
+  <div />
+</template>

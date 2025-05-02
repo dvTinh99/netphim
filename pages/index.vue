@@ -509,18 +509,7 @@
   </div>
 </template>
 
-<script setup lang="ts">
-import { useServer1Api } from '~/composables/useServer1Api'
-
-const { fetchFromServer1, fetchFromServer2 } = useServer1Api()
-
-try {
-  fetchFromServer1('the-loai')
-  fetchFromServer2('the-loai')
-} catch (error) {
-  console.error('API error:', error)
-}
-</script>
+<script setup lang="ts"></script>
 
 <style>
 /* You can add any additional custom styles here */

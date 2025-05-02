@@ -1,1 +1,3 @@
-<template>tinhdoan da o day</template>
+<template>
+  <div />
+</template>
