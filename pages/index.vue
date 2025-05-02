@@ -1,50 +1,6 @@
 <template>
   <div class="min-h-screen bg-[#06121e] text-white">
-    <!-- Header -->
-    <header class="bg-[#09080b]/80 py-3 px-4 sticky top-0 z-50">
-      <div class="container mx-auto flex items-center justify-between">
-        <div class="flex items-center">
-          <NuxtLink to="/" class="mr-8">
-            <img
-              src="/placeholder.svg?height=40&width=40"
-              alt="MoonPlay"
-              class="w-10 h-10 rounded-full"
-            />
-          </NuxtLink>
-          <nav class="hidden md:flex space-x-6">
-            <NuxtLink to="/gioi-thieu" class="text-white hover:text-[#dd003f]">
-              Giới thiệu
-            </NuxtLink>
-            <NuxtLink to="/kho-phim" class="text-white hover:text-[#dd003f]">
-              Kho phim
-            </NuxtLink>
-            <NuxtLink
-              to="/phim-dien-anh"
-              class="text-white hover:text-[#dd003f]"
-            >
-              Phim điện ảnh
-            </NuxtLink>
-            <NuxtLink to="/phim-bo" class="text-white hover:text-[#dd003f]">
-              Phim bộ
-            </NuxtLink>
-            <NuxtLink to="/khuyen-mai" class="text-white hover:text-[#dd003f]">
-              Khuyến mãi
-            </NuxtLink>
-            <NuxtLink to="/tin-tuc" class="text-white hover:text-[#dd003f]">
-              Tin tức
-            </NuxtLink>
-            <NuxtLink to="/lien-he" class="text-white hover:text-[#dd003f]">
-              Liên hệ
-            </NuxtLink>
-          </nav>
-        </div>
-        <button
-          class="bg-[#dd003f] hover:bg-[#dd003f]/80 text-white rounded-md px-4 py-1"
-        >
-          Đăng nhập
-        </button>
-      </div>
-    </header>
+    
 
     <!-- Hero Banner -->
     <div class="relative h-[400px] mb-8">
@@ -436,76 +392,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-[#09080b] py-8">
-      <div class="container mx-auto px-4">
-        <div class="flex flex-col md:flex-row justify-between gap-8">
-          <div class="flex items-center mb-4 md:mb-0">
-            <img
-              src="/placeholder.svg?height=40&width=40"
-              alt="MoonPlay"
-              class="w-10 h-10 rounded-full mr-2"
-            />
-            <span class="text-lg font-bold">MOONPLAY</span>
-          </div>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <h3 class="text-lg font-medium mb-4">Giới thiệu</h3>
-              <p class="text-sm text-gray-400 mb-4">
-                Moon Play là dịch vụ được cung cấp bởi Công ty Cổ Phần Moon
-                Play, thành viên của Công ty Cổ Phần Giải Trí và Giáo Dục Moon
-              </p>
-            </div>
-
-            <div>
-              <h3 class="text-lg font-medium mb-4">Hỗ trợ</h3>
-              <ul class="space-y-2 text-sm text-gray-400">
-                <li>0843601796</li>
-                <li>Hoặc kết nối qua:</li>
-                <li class="font-medium text-white">Kết nối với chúng tôi</li>
-                <li class="flex space-x-4 mt-2">
-                  <NuxtLink to="#" class="hover:text-[#dd003f]">
-                    <Facebook class="w-6 h-6" />
-                  </NuxtLink>
-                  <NuxtLink to="#" class="hover:text-[#dd003f]">
-                    <Instagram class="w-6 h-6" />
-                  </NuxtLink>
-                  <NuxtLink to="#" class="hover:text-[#dd003f]">
-                    <Youtube class="w-6 h-6" />
-                  </NuxtLink>
-                  <NuxtLink to="#" class="hover:text-[#dd003f]">
-                    <TikTok class="w-6 h-6" />
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 class="text-lg font-medium mb-4">Quy chế</h3>
-              <ul class="space-y-2 text-sm text-gray-400">
-                <li>
-                  <NuxtLink to="#" class="hover:text-[#dd003f]">
-                    Quy chế sử dụng dịch vụ
-                  </NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="#" class="hover:text-[#dd003f]">
-                    Chính sách bảo mật
-                  </NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="#" class="hover:text-[#dd003f]">
-                    Khuyến mãi
-                  </NuxtLink>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 </template>
 
