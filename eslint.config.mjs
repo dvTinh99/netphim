@@ -6,8 +6,8 @@ export default withNuxt(
   {
     files: ['**/*.ts', '**/*.vue'],
     rules: {
-      'no-console': 'off' // allow console.log in TypeScript files
-    }
+      'no-console': 'off', // allow console.log in TypeScript files
+    },
   },
   // {
   //   ...

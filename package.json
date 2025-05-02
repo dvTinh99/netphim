@@ -9,7 +9,8 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lint": "eslint . --fix",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "format": "prettier \"./**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,json,css,sass,scss}\" --write"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^1.3.0",
     "eslint": "^9.25.1",
+    "prettier": "3.5.3",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.10"
   }

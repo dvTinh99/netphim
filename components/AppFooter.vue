@@ -1,3 +1,1 @@
-<template>
-    tinh doan foooter
-</template>
+<template>tinh doan foooter</template>

@@ -1,3 +1,1 @@
-<template>
-    tinhdoan da o day
-</template>
+<template>tinhdoan da o day</template>
