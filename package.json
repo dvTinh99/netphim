@@ -13,10 +13,12 @@
     "format": "eslint . --fix && prettier \"./**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,json,css,sass,scss}\" --write"
   },
   "dependencies": {
+    "@pinia/nuxt": "0.11.0",
     "@tailwindcss/vite": "^4.1.4",
     "hls.js": "^1.6.2",
     "lucide-vue-next": "^0.503.0",
     "nuxt": "^3.16.2",
+    "pinia": "^3.0.2",
     "plyr": "^3.7.8",
     "tailwindcss": "^4.1.4",
     "vue": "^3.5.13",
