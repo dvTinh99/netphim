@@ -6,10 +6,5 @@ export function useServer1Api() {
     return res
   }
 
-  const fetchFromServer2 = async (endpoint: string) => {
-    const res = await $fetch(`${config.public.SERVER_2_URL}/${endpoint}`)
-    return res
-  }
-
-  return { fetchFromServer1, fetchFromServer2 }
+  return { fetchFromServer1 }
 }

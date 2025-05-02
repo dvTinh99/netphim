@@ -44,6 +44,72 @@
                 </div>
               </div>
             </div>
+            <!-- Quốc gia with submenu -->
+            <div class="relative group">
+              <NuxtLink to="/kho-phim" class="text-white hover:text-[#dd003f] text-sm flex items-center gap-1">
+                Quốc gia
+                <ChevronDown class="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" />
+              </NuxtLink>
+              
+              <!-- Submenu -->
+              <div class="absolute left-0 top-full mt-1 bg-[#0d0d0d] border border-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-[800px] p-4">
+                <div class="grid grid-cols-5">
+                  <div v-for="column in 5" :key="`column-${column}`">
+                    <ul class="">
+                      <li v-for="item in getCountryItems(column)" :key="`submenu-${item}`">
+                        <NuxtLink 
+                          :to="`/kho-phim/${item.slug}`" 
+                          class="text-gray-300 hover:text-[#dd003f] text-sm flex items-center gap-1"
+                        >
+                          <Film class="w-3 h-3" />
+                          Phim {{ item.name }}
+                        </NuxtLink>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="mt-4 pt-3 border-t border-gray-800">
+                  <NuxtLink to="/kho-phim" class="text-[#dd003f] hover:underline text-sm flex items-center justify-center gap-1">
+                    Xem tất cả phim
+                    <ArrowRight class="w-3 h-3" />
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+            <!-- Năm with submenu -->
+            <div class="relative group">
+              <NuxtLink to="/kho-phim" class="text-white hover:text-[#dd003f] text-sm flex items-center gap-1">
+                Năm
+                <ChevronDown class="w-4 h-4 group-hover:rotate-180 transition-transform duration-200" />
+              </NuxtLink>
+              
+              <!-- Submenu -->
+              <div class="absolute left-0 top-full mt-1 bg-[#0d0d0d] border border-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-[800px] p-4">
+                <div class="grid grid-cols-5">
+                  <div v-for="column in 5" :key="`column-${column}`">
+                    <ul class="">
+                      <li v-for="item in getColumnItems(column)" :key="`submenu-${item}`">
+                        <NuxtLink 
+                          :to="`/kho-phim/${item.slug}`" 
+                          class="text-gray-300 hover:text-[#dd003f] text-sm flex items-center gap-1"
+                        >
+                          <Film class="w-3 h-3" />
+                          Phim {{ item.name }}
+                        </NuxtLink>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="mt-4 pt-3 border-t border-gray-800">
+                  <NuxtLink to="/kho-phim" class="text-[#dd003f] hover:underline text-sm flex items-center justify-center gap-1">
+                    Xem tất cả phim
+                    <ArrowRight class="w-3 h-3" />
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
             
             <NuxtLink to="/phim-dien-anh" class="text-white hover:text-[#dd003f] text-sm">
               Phim lẻ
@@ -225,9 +291,8 @@ import type { Category } from '~/entities/Category'
 import { useCategoryStore } from '~/stores'
 const categoryStore = useCategoryStore()
 
-const categories = computed<Category[]>(() => {
-  return categoryStore.categories
-})
+const categories = computed<Category[]>(() => categoryStore.categories)
+const countries = computed<Category[]>(() => categoryStore.countries)
 const searchQuery = ref('')
 const showMobileSearch = ref(false)
 const mobileSearchInput = ref<HTMLElement>()
@@ -258,6 +323,13 @@ const getColumnItems = (column : number) => {
   const startIndex = (column - 1) * itemsPerColumn
   const endIndex = startIndex + itemsPerColumn
   return categories.value.slice(startIndex, endIndex)
+}
+
+const getCountryItems = (column : number) => {
+  const itemsPerColumn = Math.ceil(countries.value.length / 5)
+  const startIndex = (column - 1) * itemsPerColumn
+  const endIndex = startIndex + itemsPerColumn
+  return countries.value.slice(startIndex, endIndex)
 }
 
 const toggleMobileSearch = () => {

@@ -1,7 +1,5 @@
 <template>
   <div class="min-h-screen bg-[#06121e] text-white">
-    
-
     <!-- Hero Banner -->
     <div class="relative h-[400px] mb-8">
       <div
@@ -31,20 +29,20 @@
       <h2 class="text-xl font-bold mb-4">Phim hot</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
         <div
-          v-for="i in 3"
+          v-for="i in movieNews"
           :key="`hot-${i}`"
-          class="relative group cursor-pointer"
+          class="relative group cursor-pointer h-[270px]"
         >
           <img
-            :src="`/placeholder.svg?height=200&width=400`"
+            :src="i.thumb_url"
             :alt="`Hot Movie ${i}`"
-            class="w-full h-[180px] object-cover rounded-md"
+            class="w-full h-[270px] object-cover rounded-md"
           />
           <div
             class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
           >
             <div class="p-3 w-full">
-              <h3 class="text-sm font-bold">Movie Title {{ i }}</h3>
+              <h3 class="text-sm font-bold">{{ i.name }}</h3>
             </div>
           </div>
         </div>
@@ -395,7 +393,13 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { Movie } from '~/entities/Movie';
+import { useMovieStore } from '~/stores'
+const movieStore = useMovieStore()
+
+const movieNews = computed<Movie[]>(() => movieStore.news)
+</script>
 
 <style>
 /* You can add any additional custom styles here */
