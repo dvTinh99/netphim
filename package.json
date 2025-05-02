@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint . --fix",
     "lint:fix": "eslint . --fix",
-    "format": "prettier \"./**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,json,css,sass,scss}\" --write"
+    "format": "eslint . --fix && prettier \"./**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,json,css,sass,scss}\" --write"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
