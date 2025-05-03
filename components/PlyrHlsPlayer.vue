@@ -1,62 +1,76 @@
 <template>
-  <video ref="video" class="plyr__video-embed" controls />
+  <video
+    ref="video"
+    class="plyr w-full h-auto"
+    controls
+    :poster="poster"
+  ></video>
 </template>
 
-<script setup>
-import { onMounted, ref, onBeforeUnmount } from 'vue'
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+import Hls from 'hls.js'
+import Plyr from 'plyr'
+import 'plyr/dist/plyr.css'
 
-let Hls, Plyr
+interface Props {
+  src?: string
+  poster?: string
+}
 
-const props = defineProps({
-  src: { type: String, required: true },
-})
+const hlsUrl = defineModel<string>({ type: String, default: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8' })
+const props = defineProps<Props>()
 
-const video = ref(null)
-let hls
-let player
+const video = ref<HTMLVideoElement | null>(null)
+let hlsInstance: Hls | null = null
+let plyrInstance: Plyr | null = null
 
-onMounted(async () => {
-  if (import.meta.client) {
-    // Dynamically import only on client
-    const HlsModule = await import('hls.js')
-    const PlyrModule = await import('plyr')
-    await import('plyr/dist/plyr.css')
+onMounted(() => {
+  if (!video.value) return
 
-    Hls = HlsModule.default
-    Plyr = PlyrModule.default
 
-    if (Hls.isSupported()) {
-      hls = new Hls()
-      hls.loadSource(props.src)
-      hls.attachMedia(video.value)
-    } else if (video.value.canPlayType('application/vnd.apple.mpegurl')) {
-      video.value.src = props.src
-    }
-
-    player = new Plyr(video.value, {
-      speed: { selected: 1, options: [0.5, 1, 1.5, 2] },
-      controls: [
-        'play',
-        'progress',
-        'current-time',
-        'mute',
-        'volume',
-        'settings',
-        'fullscreen',
-      ],
-      settings: ['speed', 'quality'],
+  if (Hls.isSupported()) {
+    hlsInstance = new Hls()
+    console.log('hlsUrl.value', hlsUrl.value);
+    
+    hlsInstance.loadSource(hlsUrl.value as string)
+    hlsInstance.attachMedia(video.value)
+    hlsInstance.on(Hls.Events.ERROR, (_event, data) => {
+      console.error('HLS.js error:', data)
     })
+  } else if (video.value.canPlayType('application/vnd.apple.mpegurl')) {
+    video.value.src = hlsUrl.value as string
   }
+
+  plyrInstance = new Plyr(video.value, {
+    controls: [
+      'play',
+      'progress',
+      'current-time',
+      'mute',
+      'volume',
+      'settings',
+      'fullscreen',
+    ],
+    settings: ['speed', 'quality'],
+    speed: { selected: 1, options: [0.5, 1, 1.5, 2] },
+  })
+
+  // Example: listen for speed change
+  plyrInstance.on('ratechange', (event) => {
+    console.log('Speed changed to', plyrInstance?.speed)
+  })
 })
 
 onBeforeUnmount(() => {
-  if (hls) hls.destroy()
-  if (player) player.destroy()
+  hlsInstance?.destroy()
+  plyrInstance?.destroy()
 })
 </script>
 
 <style scoped>
+/* Optional: adjust Plyr UI styling */
 .plyr {
-  width: 100%;
+  --plyr-color-main: #1f2937; /* Tailwind slate-800 */
 }
 </style>

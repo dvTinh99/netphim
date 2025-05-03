@@ -7,7 +7,8 @@
           <!-- Video Player -->
           <div class="relative bg-black rounded-md overflow-hidden mb-6">
             <HlsPlayer
-              src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8"
+              v-if="hlsUrl"
+              v-model="hlsUrl"
             />
           </div>
 
