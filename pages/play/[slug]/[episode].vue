@@ -14,10 +14,10 @@
           <!-- Movie Title and Rating -->
           <div class="mb-6">
             <h1 class="text-3xl font-bold mb-1">
-              Dragon Ball Super Movie: Broly
+              {{ movie?.name }}
             </h1>
             <h2 class="text-xl text-gray-300 mb-3">
-              Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly (2018)
+              {{ movie?.origin_name }}
             </h2>
 
             <div class="flex items-center justify-between mb-4">
@@ -30,12 +30,12 @@
                 />
                 <Star class="w-8 h-8 text-gray-500" />
               </div>
-              <div class="text-gray-300">Thuyết minh: 10/10</div>
+              <div class="text-gray-300">{{ movie?.time }}</div>
             </div>
           </div>
 
           <!-- Episode Selection -->
-          <div v-for="(episode , index) in episodes" :key="index" class="mb-8">
+          <div v-for="(episode, index) in episodes" :key="index" class="mb-8">
             <h3 class="text-lg font-medium mb-3">{{ episode.server_name }}</h3>
             <div class="flex flex-wrap gap-2">
               <button
@@ -43,12 +43,13 @@
                 :key="`${severData.slug}`"
                 :class="[
                   'w-24 h-10 rounded border border-gray-600 flex items-center justify-center',
-                  severData.slug === 'tap-01'
+                  severData.slug === episodeUrl
                     ? 'bg-[#dd003f] border-[#dd003f]'
                     : 'hover:bg-gray-700',
                 ]"
+                @click="handleEpisodeClick(severData.slug)"
               >
-              {{ severData.name.slice(-2) }}
+                {{ severData.slug.replace('tap-', '') }}
               </button>
             </div>
           </div>
@@ -60,27 +61,19 @@
                 src="/placeholder.svg?height=280&width=190"
                 alt="Dragon Ball Super Movie: Broly Poster"
                 class="w-full rounded-md"
-              >
+              />
             </div>
 
             <div class="flex-1">
               <h2 class="text-xl font-bold mb-3">
-                Dragon Ball Super Movie: Broly
+                {{ movie?.name }}
               </h2>
               <h3 class="text-lg text-gray-300 mb-4">
-                Bảy Viên Ngọc Rồng Siêu Cấp: Huyền Thoại Broly (2018)
+                {{ movie?.origin_name }}
               </h3>
 
               <p class="text-gray-300 mb-6 leading-relaxed">
-                Chào mừng bạn đến với trang web MoonPlay - nơi bạn có thể khám
-                phá thế giới tuyệt vời của điện ảnh và trải nghiệm những bộ phim
-                đẹp và đầy cảm xúc. Với một thư viện phong phú được đăng hàng
-                ngàn bộ phim từ mọi thể loại, chúng tôi mang đến cho bạn những
-                giờ phút thư giãn và hứng khởi.
-              </p>
-              <p class="text-gray-300 leading-relaxed">
-                Cốt truyện của "Bảy Viên Ngọc Rồng" xoay quanh việc tìm kiếm và
-                thu thập bảy viên ngọc rồng. Mỗi viên ngọc có khả năng...
+                {{ movie?.content }}
               </p>
 
               <!-- Social Actions -->
@@ -108,11 +101,11 @@
           </div>
 
           <!-- Comments Section -->
-          <div class="mb-8">
-            <h3 class="text-lg font-medium mb-4">1 bình luận</h3>
+          <!-- <div class="mb-8">
+            <h3 class="text-lg font-medium mb-4">1 bình luận</h3> -->
 
-            <!-- Comment -->
-            <div class="flex gap-4 mb-6">
+          <!-- Comment -->
+          <!-- <div class="flex gap-4 mb-6">
               <div class="w-12 h-12 flex-shrink-0">
                 <img
                   src="/placeholder.svg?height=48&width=48"
@@ -134,10 +127,10 @@
                   />
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <!-- Comment Form -->
-            <div class="flex gap-4">
+          <!-- Comment Form -->
+          <!-- <div class="flex gap-4">
               <div class="w-12 h-12 flex-shrink-0">
                 <img
                   src="/placeholder.svg?height=48&width=48"
@@ -153,7 +146,7 @@
                 >
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- You Might Also Like -->
           <div class="mb-8">
@@ -169,7 +162,7 @@
                     :src="`/placeholder.svg?height=180&width=320`"
                     :alt="`Related Movie ${i}`"
                     class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                  >
+                  />
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
                   >
@@ -197,7 +190,7 @@
                   :src="`/placeholder.svg?height=180&width=320`"
                   :alt="`Similar Movie ${i}`"
                   class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                >
+                />
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
                 >
@@ -217,13 +210,16 @@
 <script setup lang="ts">
 // import HlsPlayer from '~/components/HlsPlayer.vue'
 import HlsPlayer from '~/components/PlyrHlsPlayer.vue'
-import type { Episode, Movie } from '~/entities/Movie'
+import { Heart, Facebook, Share2 } from 'lucide-vue-next'
+import type { Episode, EpisodeData, Movie } from '~/entities/Movie'
+import { useRoute, useRouter } from 'vue-router'
 
 import { useMovieStore } from '~/stores'
 const movieStore = useMovieStore()
 const route = useRoute()
 const movie = ref<Movie>()
 const episodes = ref<Episode[]>([])
+const hlsUrl = ref<string>()
 
 const slug = route.params.slug
 const episodeUrl = route.params.episode
@@ -235,10 +231,21 @@ onBeforeMount(async () => {
     episodes.value = data.episodes
   }
 
-  console.log('movie', movie);
-  console.log('episodes', episodes);
+  episodes.value[0].server_data.sort((a: EpisodeData, b: EpisodeData) => {
+    if (a.slug === episodeUrl || a.slug === 'full') {
+      hlsUrl.value = a.link_m3u8
+    }
+
+    const numA = parseInt(a.slug.replace('tap-', ''), 10)
+    const numB = parseInt(b.slug.replace('tap-', ''), 10)
+    return numB - numA
+  })
 })
 
+const router = useRouter()
+const handleEpisodeClick = (slug: string) => {
+  router.push(`/play/nhat-ky-cua-me/${slug}`)
+}
 </script>
 
 <style>

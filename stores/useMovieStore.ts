@@ -18,13 +18,16 @@ export const useMovieStore = defineStore('movie', {
         console.error('API error:', error)
       }
     },
-    async getMovieBySlug(slug: string): Promise<{ movie: Movie, episodes: Episode[] } | undefined> {
+    async getMovieBySlug(
+      slug: string,
+    ): Promise<{ movie: Movie; episodes: Episode[] } | undefined> {
       try {
         const data = await fetchFromServer1(`phim/${slug}`)
-        return { movie : data.movie, episodes: data.episodes }
+        return { movie: data.movie, episodes: data.episodes }
       } catch (error) {
         console.error('API error:', error)
       }
     },
   },
+  persist: { storage: localStorage },
 })

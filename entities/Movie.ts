@@ -33,16 +33,18 @@ export interface Movie {
   content: string
   actor: string[]
   director: string[]
-  episodes : Episode[]
+  episodes: Episode[]
 }
 
 export interface Episode {
-  server_name: string,
-  server_data: {
-    name: string
-    slug: string
-    fileName: string
-    link_embed: string
-    link_m3u8: string
-  }[]
+  server_name: string
+  server_data: EpisodeData[]
+}
+
+export interface EpisodeData {
+  name: string
+  slug: string
+  fileName: string
+  link_embed: string
+  link_m3u8: string
 }
