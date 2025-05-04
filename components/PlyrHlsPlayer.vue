@@ -20,6 +20,7 @@ interface Props {
 
 const hlsUrl = defineModel<string>({ type: String, default: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8' })
 const props = defineProps<Props>()
+const attributes = useAttrs()
 
 const video = ref<HTMLVideoElement | null>(null)
 let hlsInstance: Hls | null = null
