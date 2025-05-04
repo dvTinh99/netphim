@@ -4,7 +4,7 @@
     class="plyr w-full h-auto"
     controls
     :poster="poster"
-  ></video>
+  />
 </template>
 
 <script setup lang="ts">

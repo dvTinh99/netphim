@@ -10,64 +10,64 @@
               v-if="hlsUrl"
               v-model="hlsUrl"
             />
-            <div class="w-full rounded-md border border-blue-300 h-full" v-else>
+            <div v-else class="w-full rounded-md border border-blue-300 h-full">
               <div class="flex animate-pulse space-x-4 h-full w-full">
                 <div class="flex-1 space-y-6 py-1 h-full w-full">
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                   <div class="space-y-3">
                     <div class="grid grid-cols-3 gap-4">
-                      <div class="col-span-1 h-2 rounded bg-gray-200"></div>
-                      <div class="col-span-2 h-2 rounded bg-gray-200"></div>
+                      <div class="col-span-1 h-2 rounded bg-gray-200"/>
+                      <div class="col-span-2 h-2 rounded bg-gray-200"/>
                     </div>
-                    <div class="h-2 rounded bg-gray-200"></div>
+                    <div class="h-2 rounded bg-gray-200"/>
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
                 src="/placeholder.svg?height=280&width=190"
                 alt="Dragon Ball Super Movie: Broly Poster"
                 class="w-full rounded-md"
-              />
+              >
             </div>
 
             <div class="flex-1">
@@ -225,7 +225,7 @@
                     :src="`/placeholder.svg?height=180&width=320`"
                     :alt="`Related Movie ${i}`"
                     class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                  />
+                  >
                   <div
                     class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
                   >
@@ -253,7 +253,7 @@
                   :src="`/placeholder.svg?height=180&width=320`"
                   :alt="`Similar Movie ${i}`"
                   class="w-full aspect-video object-cover transition-transform group-hover:scale-105"
-                />
+                >
                 <div
                   class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
                 >

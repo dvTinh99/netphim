@@ -8,7 +8,7 @@
             src="/placeholder.svg?height=40&width=40"
             alt="MoonPlay"
             class="w-10 h-10 rounded-full mr-2"
-          />
+          >
           <span class="text-lg font-bold">MOONPLAY</span>
         </div>
 

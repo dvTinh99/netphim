@@ -17,7 +17,7 @@
               :src="movie?.poster_url"
               :alt="movie?.slug"
               class="w-[270px] h-[400px] rounded-lg shadow-lg"
-            />
+            >
             <NuxtLink :to="`/play/${movie?.slug}/tap-01`">
               <button
                 class="w-full mt-4 bg-[#dd003f] hover:bg-[#dd003f]/80 text-white py-3 flex items-center justify-center gap-2 rounded-md"
@@ -119,7 +119,7 @@
             <img
               src="/avatar.webp"
               class="w-full h-full rounded-full object-cover"
-            />
+            >
           </div>
           <h3 class="font-medium text-sm">{{ actor }}</h3>
           <!-- <p class="text-gray-400 text-xs">{{ actor.character }}</p> -->
@@ -140,7 +140,7 @@
             :src="`/placeholder.svg?height=180&width=320`"
             :alt="`Trailer ${index + 1}`"
             class="rounded-md w-full"
-          />
+          >
           <div
             class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
           >
@@ -178,7 +178,7 @@
               :src="`/placeholder.svg?height=300&width=200`"
               :alt="`Related Movie ${index + 1}`"
               class="w-full transition-transform group-hover:scale-105"
-            />
+            >
             <div
               class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end"
             >

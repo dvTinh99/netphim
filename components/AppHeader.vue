@@ -8,7 +8,7 @@
             src="/placeholder.svg?height=40&width=40"
             alt="MoonPlay"
             class="w-10 h-10 rounded-full"
-          />
+          >
         </NuxtLink>
         <nav class="hidden md:flex space-x-4 lg:space-x-6">
           <!-- Thể loại with submenu -->
@@ -182,7 +182,7 @@
             type="text"
             placeholder="Tìm kiếm phim..."
             class="bg-[#1a1a1a] border border-gray-700 rounded-full pl-10 pr-4 py-1.5 text-sm w-[200px] lg:w-[250px] focus:outline-none focus:border-[#dd003f] focus:ring-1 focus:ring-[#dd003f]"
-          />
+          >
           <Search
             class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
           />
@@ -220,7 +220,7 @@
           type="text"
           placeholder="Tìm kiếm phim..."
           class="bg-[#1a1a1a] border border-gray-700 rounded-full pl-10 pr-10 py-2 text-sm w-full focus:outline-none focus:border-[#dd003f] focus:ring-1 focus:ring-[#dd003f] text-white"
-        />
+        >
         <Search
           class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
         />
