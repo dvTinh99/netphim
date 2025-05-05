@@ -157,7 +157,7 @@
     <!-- SLIDE SECTION -->
     <div id="big-section" class="big-section">
       <!-- BIG SLIDES -->
-      <div id="big-slider" class="slide-container">
+      <div id="big-slider" class="slide-container" ref="bigSlider">
         <div class="big-slide-item active">
           <img src="~/assets/img/Images/p-2.jpg" alt="Poster" />
 
@@ -328,11 +328,15 @@
 
         <ul class="slide-control">
           <li class="slide-prev">
-            <ion-icon name="chevron-back-outline" />
+            <button @click="prevSlide">
+              <ion-icon name="chevron-back-outline" />
+            </button>
           </li>
 
-          <li class="slide-next">
-            <ion-icon name="chevron-forward-outline" />
+          <li class="slide-next" >
+            <button @click="nextSlide">
+              <ion-icon name="chevron-forward-outline" />
+            </button>
           </li>
         </ul>
       </div>
@@ -1045,10 +1049,40 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from 'vue'
+import { onMounted, ref, useTemplateRef } from 'vue'
 
 const slidePlay = ref(true)
 let bigSlideIndex = 0
+const bigSlider = useTemplateRef<HTMLElement>('bigSlider')
+
+console.log('bigSlider', bigSlider.value);
+const bigSlideItems = computed<HTMLElement[]>(() => bigSlider.value?.querySelectorAll('.big-slide-item') as any)
+// let bigSlideItems : HTMLElement[] = []
+const showSlide = (index: number) => {
+  if (bigSlider.value && bigSlideItems) {
+      bigSlider?.value
+        .querySelector('.big-slide-item.active')
+        ?.classList.remove('active')
+      bigSlideItems.value[index].classList.add('active')
+    }
+}
+
+const nextSlide = () => {
+  console.log('netslide ne');
+  
+  if (bigSlideItems) {
+    bigSlideIndex = (bigSlideIndex + 1) % bigSlideItems.value.length
+    showSlide(bigSlideIndex)
+  }
+}
+
+const prevSlide = () => {
+  if (bigSlideItems) {
+    bigSlideIndex =
+      (bigSlideIndex - 1 + bigSlideItems.value.length) % bigSlideItems.value.length
+    showSlide(bigSlideIndex)
+  }
+}
 
 onMounted(() => {
   const navItems = document.querySelectorAll<HTMLDivElement>('.nav-item')
@@ -1058,7 +1092,7 @@ onMounted(() => {
   const menuToggle = document.querySelector(
     '.menu-toggle',
   ) as HTMLElement | null
-  const bigSlider = document.querySelector('#big-slider') as HTMLElement | null
+  // const bigSlider = document.querySelector('#big-slider') as HTMLElement | null
   const header = document.querySelector('.nav') as HTMLElement | null
   const scrollProgress = document.getElementById(
     'progress-bar',
@@ -1068,8 +1102,6 @@ onMounted(() => {
   ) as HTMLElement | null
   const elToShow = document.querySelectorAll<HTMLElement>('.show-on-scroll')
   const listItems = document.querySelectorAll<HTMLElement>('.item')
-
-  console.log('toi là tuan')
 
   navItems.forEach((navItem, i) => {
     navItem.addEventListener('click', () => {
@@ -1085,41 +1117,24 @@ onMounted(() => {
     })
   }
 
-  if (bigSlider) {
+  if (bigSlider.value) {
     const bigSlideItems =
-      bigSlider.querySelectorAll<HTMLElement>('.big-slide-item')
-    const slideNext = bigSlider.querySelector(
+      bigSlider.value.querySelectorAll<HTMLElement>('.big-slide-item')
+    const slideNext = bigSlider.value.querySelector(
       '.slide-next',
     ) as HTMLElement | null
-    const slidePrev = bigSlider.querySelector(
+    const slidePrev = bigSlider.value.querySelector(
       '.slide-prev',
     ) as HTMLElement | null
 
-    const showSlide = (index: number) => {
-      bigSlider
-        .querySelector('.big-slide-item.active')
-        ?.classList.remove('active')
-      bigSlideItems[index].classList.add('active')
-    }
-
-    const nextSlide = () => {
-      bigSlideIndex = (bigSlideIndex + 1) % bigSlideItems.length
-      showSlide(bigSlideIndex)
-    }
-
-    const prevSlide = () => {
-      bigSlideIndex =
-        (bigSlideIndex - 1 + bigSlideItems.length) % bigSlideItems.length
-      showSlide(bigSlideIndex)
-    }
 
     slideNext?.addEventListener('click', nextSlide)
     slidePrev?.addEventListener('click', prevSlide)
 
-    bigSlider.addEventListener('mouseover', () => (slidePlay.value = false))
-    bigSlider.addEventListener('mouseleave', () => (slidePlay.value = true))
+    bigSlider.value.addEventListener('mouseover', () => (slidePlay.value = false))
+    bigSlider.value.addEventListener('mouseleave', () => (slidePlay.value = true))
 
-    setTimeout(() => bigSlideItems[0]?.classList.add('active'), 200)
+    setTimeout(() => bigSlideItems && bigSlideItems[0]?.classList.add('active'), 200)
 
     setInterval(() => {
       if (slidePlay.value) nextSlide()
