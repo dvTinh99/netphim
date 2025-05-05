@@ -1,6 +1,8 @@
 <template>
   <div>
     <slot />
+    <Footer />
   </div>
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>

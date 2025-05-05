@@ -1,38 +1,157 @@
 <template>
-  <nav class="bg-gray-800">
-    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <div class="flex items-center">
-        <a href="/" class="text-white text-2xl font-bold">
-          <i class="bx bx-movie-play bx-tada" />Fl<span class="text-main-color"
-            >i</span
-          >x
+  <div>
+    <div id="menu-tablet" class="menu-tablet" style="display: none">
+      <ul class="menu-tb-list">
+        <li><a href="#"> home </a></li>
+        <li><a href="#"> Movies </a></li>
+        <li><a href="#"> tv series </a></li>
+        <li><a href="#"> Genre </a></li>
+        <li><a href="#"> setting </a></li>
+
+        <li><a href="#"> Account </a></li>
+      </ul>
+    </div>
+
+    <div class="navigation">
+      <ul>
+        <li class="item active">
+          <a>
+            <span class="icon"><i class="bx bx-home-circle" /></span>
+            <span class="text">Home</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a>
+            <span class="icon"><ion-icon name="film-outline" /></span>
+            <span class="text">Movie</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a>
+            <span class="icon"><ion-icon name="tv-outline" /></span>
+            <span class="text">TVSeries</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a>
+            <span class="icon"><i class="bx bx-user" /></span>
+            <span class="text">Profile</span>
+          </a>
+        </li>
+
+        <li class="item">
+          <a>
+            <span class="icon"><i class="bx bx-cog" /></span>
+            <span class="text">Settings</span>
+          </a>
+        </li>
+        <div class="indicator" />
+      </ul>
+    </div>
+
+    <div id="progress-bar" class="progress-bar">
+      <a id="progress-val" href="#">
+        <ion-icon name="logo-foursquare" />
+      </a>
+    </div>
+
+    <div class="container">
+      <div class="nav">
+        <a href="#" class="logo">
+          <i
+            style="margin-right: 10px"
+            class="bx bx-movie-play bx-tada main-color"
+          />Fl<span class="main-color">i</span>x
         </a>
-      </div>
-      <div class="hidden md:flex space-x-4">
-        <a href="/" class="text-white hover:text-gray-300">Home</a>
-        <a href="/movies" class="text-white hover:text-gray-300">Movies</a>
-        <a href="/tv-series" class="text-white hover:text-gray-300"
-          >TV Series</a
-        >
-        <a href="/settings" class="text-white hover:text-gray-300">Settings</a>
-        <a href="#" class="text-white hover:text-gray-300">Account</a>
-      </div>
-      <div class="md:hidden">
-        <button class="text-white focus:outline-none" @click="toggleMenu">
-          <i class="bx bx-menu" />
-        </button>
+
+        <form action="" class="search-box">
+          <input
+            type="text"
+            name="search"
+            placeholder="Search Your Movie ....."
+            class="nav-search"
+          />
+          <button>
+            <i class="bx bx-search-alt" />
+          </button>
+        </form>
+
+        <div class="nav-sign">
+          <a href="#" class="btn btn-hover">
+            <span>Sign in</span>
+          </a>
+        </div>
+        <div class="menu-toggle">
+          <ion-icon name="menu-outline" class="open" />
+          <ion-icon name="close-outline" class="close" />
+        </div>
       </div>
     </div>
-    <div v-if="isMenuOpen" class="md:hidden">
-      <div class="bg-gray-700">
-        <a href="/" class="block text-white px-4 py-2">Home</a>
-        <a href="/movies" class="block text-white px-4 py-2">Movies</a>
-        <a href="/tv-series" class="block text-white px-4 py-2">TV Series</a>
-        <a href="/settings" class="block text-white px-4 py-2">Settings</a>
-        <a href="#" class="block text-white px-4 py-2">Account</a>
-      </div>
+
+    <div class="nav-wrapper">
+      <ul id="nav-menu" class="nav-menu">
+        <li class="nav-item active">
+          <a href="#">
+            <span class="nav-icon"><ion-icon name="home-outline" /></span>
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#latest-section">
+            <span class="nav-icon"><ion-icon name="film-outline" /></span>
+            Movies
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#section-tv">
+            <span class="nav-icon"><ion-icon name="tv-outline" /></span>
+            Tv Series
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#">
+            <span class="nav-icon"><ion-icon name="grid-outline" /></span>
+            Genre
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#">
+            <span class="nav-icon"><ion-icon name="settings-outline" /></span>
+            setting
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="nav-icon"
+              ><ion-icon name="chatbubbles-outline"
+            /></span>
+            messages
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="nav-icon"
+              ><ion-icon name="help-circle-outline"
+            /></span>
+            about
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#">
+            <span class="nav-icon"><ion-icon name="person-outline" /></span>
+            Account
+          </a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
 </template>
 
 <script setup>
