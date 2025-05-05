@@ -4,21 +4,24 @@
       <div class="flex flex-col md:flex-row justify-between">
         <div class="footer-header">
           <a href="#" class="logo flex items-center">
-            <i class='bx bx-movie-play bx-tada main-color mr-2'/>
+            <i class="bx bx-movie-play bx-tada main-color mr-2" />
             Fl<span class="main-color">i</span>x
           </a>
           <p class="description mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, possimus eius. Deserunt non odit, cum vero reprehenderit laudantium odio vitae autem quam, incidunt molestias ratione mollitia accusantium, facere ab suscipit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+            possimus eius. Deserunt non odit, cum vero reprehenderit laudantium
+            odio vitae autem quam, incidunt molestias ratione mollitia
+            accusantium, facere ab suscipit.
           </p>
           <div class="social-list mt-4">
             <a href="#" class="social-item mr-4">
-              <i class="bx bxl-facebook"/>
+              <i class="bx bxl-facebook" />
             </a>
             <a href="#" class="social-item mr-4">
-              <i class="bx bxl-instagram"/>
+              <i class="bx bxl-instagram" />
             </a>
             <a href="#" class="social-item">
-              <i class="bx bxl-twitter"/>
+              <i class="bx bxl-twitter" />
             </a>
           </div>
         </div>

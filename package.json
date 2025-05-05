@@ -10,7 +10,7 @@
     "postinstall": "nuxt prepare",
     "lint": "eslint . --fix",
     "lint:fix": "eslint . --fix",
-    "format": "eslint . --fix && prettier \"./**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,json,css,sass,scss}\" --write"
+    "format": "prettier \"./**/*.{js,jsx,cjs,mjs,ts,tsx,cts,mts,vue,json,css,sass,scss}\" --write"
   },
   "dependencies": {
     "@pinia/nuxt": "0.11.0",

@@ -1,10 +1,5 @@
 <template>
-  <video
-    ref="video"
-    class="plyr w-full h-auto"
-    controls
-    :poster="poster"
-  />
+  <video ref="video" class="plyr w-full h-auto" controls :poster="poster" />
 </template>
 
 <script setup lang="ts">
@@ -18,7 +13,10 @@ interface Props {
   poster?: string
 }
 
-const hlsUrl = defineModel<string>({ type: String, default: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8' })
+const hlsUrl = defineModel<string>({
+  type: String,
+  default: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8',
+})
 const props = defineProps<Props>()
 const attributes = useAttrs()
 
@@ -29,11 +27,10 @@ let plyrInstance: Plyr | null = null
 onMounted(() => {
   if (!video.value) return
 
-
   if (Hls.isSupported()) {
     hlsInstance = new Hls()
-    console.log('hlsUrl.value', hlsUrl.value);
-    
+    console.log('hlsUrl.value', hlsUrl.value)
+
     hlsInstance.loadSource(hlsUrl.value as string)
     hlsInstance.attachMedia(video.value)
     hlsInstance.on(Hls.Events.ERROR, (_event, data) => {

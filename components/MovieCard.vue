@@ -1,6 +1,6 @@
 <template>
   <div class="movie-card bg-white rounded-lg shadow-md overflow-hidden">
-    <img :src="image" alt="Movie Poster" class="w-full h-48 object-cover">
+    <img :src="image" alt="Movie Poster" class="w-full h-48 object-cover" />
     <div class="p-4">
       <h3 class="text-lg font-semibold text-gray-800">{{ title }}</h3>
       <div class="flex items-center justify-between mt-2">
@@ -9,7 +9,9 @@
       </div>
       <p class="text-gray-600 mt-2">{{ description }}</p>
       <div class="mt-4">
-        <a :href="trailerLink" class="text-blue-500 hover:underline">Watch Trailer</a>
+        <a :href="trailerLink" class="text-blue-500 hover:underline"
+          >Watch Trailer</a
+        >
       </div>
     </div>
   </div>
@@ -22,8 +24,8 @@ defineProps({
   rating: String,
   duration: String,
   description: String,
-  trailerLink: String
-});
+  trailerLink: String,
+})
 </script>
 
 <style scoped>

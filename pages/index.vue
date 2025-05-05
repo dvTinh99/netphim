@@ -16,21 +16,21 @@
       <ul>
         <li class="item active">
           <a>
-            <span class="icon"><i class="bx bx-home-circle"/></span>
+            <span class="icon"><i class="bx bx-home-circle" /></span>
             <span class="text">Home</span>
           </a>
         </li>
 
         <li class="item">
           <a>
-            <span class="icon"><ion-icon name="film-outline"/></span>
+            <span class="icon"><ion-icon name="film-outline" /></span>
             <span class="text">Movie</span>
           </a>
         </li>
 
         <li class="item">
           <a>
-            <span class="icon"><ion-icon name="tv-outline"/></span>
+            <span class="icon"><ion-icon name="tv-outline" /></span>
             <span class="text">TVSeries</span>
           </a>
         </li>
@@ -44,17 +44,17 @@
 
         <li class="item">
           <a>
-            <span class="icon"><i class="bx bx-cog"/></span>
+            <span class="icon"><i class="bx bx-cog" /></span>
             <span class="text">Settings</span>
           </a>
         </li>
-        <div class="indicator"/>
+        <div class="indicator" />
       </ul>
     </div>
 
     <div id="progress-bar" class="progress-bar">
       <a id="progress-val" href="#">
-        <ion-icon name="logo-foursquare"/>
+        <ion-icon name="logo-foursquare" />
       </a>
     </div>
 
@@ -73,9 +73,9 @@
             name="search"
             placeholder="Search Your Movie ....."
             class="nav-search"
-          >
+          />
           <button>
-            <i class="bx bx-search-alt"/>
+            <i class="bx bx-search-alt" />
           </button>
         </form>
 
@@ -85,8 +85,8 @@
           </a>
         </div>
         <div class="menu-toggle">
-          <ion-icon name="menu-outline" class="open"/>
-          <ion-icon name="close-outline" class="close"/>
+          <ion-icon name="menu-outline" class="open" />
+          <ion-icon name="close-outline" class="close" />
         </div>
       </div>
     </div>
@@ -95,61 +95,57 @@
       <ul id="nav-menu" class="nav-menu">
         <li class="nav-item active">
           <a href="#">
-            <span class="nav-icon"
-              ><ion-icon name="home-outline"/></span>
+            <span class="nav-icon"><ion-icon name="home-outline" /></span>
             Home
           </a>
         </li>
 
         <li class="nav-item">
           <a href="#latest-section">
-            <span class="nav-icon"
-              ><ion-icon name="film-outline"/></span>
+            <span class="nav-icon"><ion-icon name="film-outline" /></span>
             Movies
           </a>
         </li>
         <li class="nav-item">
           <a href="#section-tv">
-            <span class="nav-icon"
-              ><ion-icon name="tv-outline"/></span>
+            <span class="nav-icon"><ion-icon name="tv-outline" /></span>
             Tv Series
           </a>
         </li>
 
         <li class="nav-item">
           <a href="#">
-            <span class="nav-icon"
-              ><ion-icon name="grid-outline"/></span>
+            <span class="nav-icon"><ion-icon name="grid-outline" /></span>
             Genre
           </a>
         </li>
 
         <li class="nav-item">
           <a href="#">
-            <span class="nav-icon"
-              ><ion-icon name="settings-outline"/></span>
+            <span class="nav-icon"><ion-icon name="settings-outline" /></span>
             setting
           </a>
         </li>
         <li class="nav-item">
           <a href="#">
             <span class="nav-icon"
-              ><ion-icon name="chatbubbles-outline"/></span>
+              ><ion-icon name="chatbubbles-outline"
+            /></span>
             messages
           </a>
         </li>
         <li class="nav-item">
           <a href="#">
             <span class="nav-icon"
-              ><ion-icon name="help-circle-outline"/></span>
+              ><ion-icon name="help-circle-outline"
+            /></span>
             about
           </a>
         </li>
 
         <li class="nav-item">
           <a href="#">
-            <span class="nav-icon"
-              ><ion-icon name="person-outline"/></span>
+            <span class="nav-icon"><ion-icon name="person-outline" /></span>
             Account
           </a>
         </li>
@@ -163,7 +159,7 @@
       <!-- BIG SLIDES -->
       <div id="big-slider" class="slide-container">
         <div class="big-slide-item active">
-          <img src="~/assets/img/Images/p-2.jpg" alt="Poster" >
+          <img src="~/assets/img/Images/p-2.jpg" alt="Poster" />
 
           <div class="big-slide-item-content">
             <div class="item-content-wrapper">
@@ -171,15 +167,15 @@
 
               <div class="movies-infors">
                 <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"/>
+                  <ion-icon name="bookmark-outline" />
                   <span>9.5</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="time-outline"/>
+                  <ion-icon name="time-outline" />
                   <span>120 mins</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="cube-outline"/>
+                  <ion-icon name="cube-outline" />
                   <span>FHD</span>
                 </div>
               </div>
@@ -194,9 +190,9 @@
           </div>
 
           <div class="play-movies">
-            <div class="ring"/>
+            <div class="ring" />
             <a href="https://www.youtube.com/watch?v=Hgeu5rhoxxY&t=10s">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
             </a>
             <div class="btn-watch">
               <span>watch trailer</span>
@@ -205,7 +201,7 @@
         </div>
 
         <div class="big-slide-item">
-          <img src="~/assets/img/Images/p-6.jpg" alt="Poster" >
+          <img src="~/assets/img/Images/p-6.jpg" alt="Poster" />
 
           <div class="big-slide-item-content">
             <div class="item-content-wrapper">
@@ -213,15 +209,15 @@
 
               <div class="movies-infors">
                 <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"/>
+                  <ion-icon name="bookmark-outline" />
                   <span>9.5</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="time-outline"/>
+                  <ion-icon name="time-outline" />
                   <span>120 mins</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="cube-outline"/>
+                  <ion-icon name="cube-outline" />
                   <span>FHD</span>
                 </div>
               </div>
@@ -236,9 +232,9 @@
           </div>
 
           <div class="play-movies">
-            <div class="ring"/>
+            <div class="ring" />
             <a href="https://www.youtube.com/watch?v=ybji16u608U">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
             </a>
             <div class="btn-watch">
               <span>watch trailer</span>
@@ -247,7 +243,7 @@
         </div>
 
         <div class="big-slide-item">
-          <img src="~/assets/img/Images/transformer-banner.jpg" alt="Poster" >
+          <img src="~/assets/img/Images/transformer-banner.jpg" alt="Poster" />
 
           <div class="big-slide-item-content">
             <div class="item-content-wrapper">
@@ -255,15 +251,15 @@
 
               <div class="movies-infors">
                 <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"/>
+                  <ion-icon name="bookmark-outline" />
                   <span>9.5</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="time-outline"/>
+                  <ion-icon name="time-outline" />
                   <span>120 mins</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="cube-outline"/>
+                  <ion-icon name="cube-outline" />
                   <span>FHD</span>
                 </div>
               </div>
@@ -278,9 +274,9 @@
           </div>
 
           <div class="play-movies">
-            <div class="ring"/>
+            <div class="ring" />
             <a href="https://www.youtube.com/watch?v=Q3VKie4pChs">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
             </a>
             <div class="btn-watch">
               <span>watch trailer</span>
@@ -289,7 +285,7 @@
         </div>
 
         <div class="big-slide-item">
-          <img src="~/assets/img/Images/p-3.jpg" alt="Poster" >
+          <img src="~/assets/img/Images/p-3.jpg" alt="Poster" />
 
           <div class="big-slide-item-content">
             <div class="item-content-wrapper">
@@ -297,15 +293,15 @@
 
               <div class="movies-infors">
                 <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"/>
+                  <ion-icon name="bookmark-outline" />
                   <span>9.5</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="time-outline"/>
+                  <ion-icon name="time-outline" />
                   <span>120 mins</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="cube-outline"/>
+                  <ion-icon name="cube-outline" />
                   <span>FHD</span>
                 </div>
               </div>
@@ -320,9 +316,9 @@
           </div>
 
           <div class="play-movies">
-            <div class="ring"/>
+            <div class="ring" />
             <a href="https://www.youtube.com/watch?v=vOUVVDWdXbo">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
             </a>
             <div class="btn-watch">
               <span>watch trailer</span>
@@ -332,11 +328,11 @@
 
         <ul class="slide-control">
           <li class="slide-prev">
-            <ion-icon name="chevron-back-outline"/>
+            <ion-icon name="chevron-back-outline" />
           </li>
 
           <li class="slide-next">
-            <ion-icon name="chevron-forward-outline"/>
+            <ion-icon name="chevron-forward-outline" />
           </li>
         </ul>
       </div>
@@ -355,69 +351,69 @@
             class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll"
           >
             <div>
-              <img src="~/assets/img/Images/raya1.jpg" alt="" >
+              <img src="~/assets/img/Images/raya1.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">raya and the last dragon</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="movie-item-overlay"/>
+            <div class="movie-item-overlay" />
             <div class="movie-item-act">
               <!-- <div class="ring"></div> -->
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
 
               <div>
-                <i class="bx bxs-share-alt"/>
-                <i class="bx bxs-heart"/>
-                <i class="bx bx-plus-medical"/>
+                <i class="bx bxs-share-alt" />
+                <i class="bx bxs-heart" />
+                <i class="bx bx-plus-medical" />
               </div>
             </div>
           </a>
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/p-4.jpg" alt="" >
+              <img src="~/assets/img/Images/p-4.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">venon: let there be carnage</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -425,36 +421,36 @@
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/p-5.jpg" alt="" >
+              <img src="~/assets/img/Images/p-5.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">dealpool 2</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
 
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
 
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -462,36 +458,36 @@
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-2.jpg" alt="" >
+              <img src="~/assets/img/Images/post-2.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">The tomorrow war</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
 
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
 
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -499,36 +495,36 @@
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-3.jpg" alt="" >
+              <img src="~/assets/img/Images/post-3.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">jungle cruise</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
 
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
 
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -536,36 +532,36 @@
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-4.jpg" alt="" >
+              <img src="~/assets/img/Images/post-4.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">dune</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
 
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
 
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -573,36 +569,36 @@
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-5.jpg" alt="" >
+              <img src="~/assets/img/Images/post-5.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">The suicide squad</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
 
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
 
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -610,36 +606,36 @@
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-6.jpg" alt="" >
+              <img src="~/assets/img/Images/post-6.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">no time to die</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
 
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
 
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -647,36 +643,36 @@
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-10.jpg" alt="" >
+              <img src="~/assets/img/Images/post-10.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">prisoner of the ghostland</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
 
-              <div class="movie-item-overlay"/>
+              <div class="movie-item-overlay" />
 
               <div class="movie-item-act">
                 <!-- <div class="ring"></div> -->
-                <i class="bx bxs-right-arrow"/>
+                <i class="bx bxs-right-arrow" />
 
                 <div>
-                  <i class="bx bxs-share-alt"/>
-                  <i class="bx bxs-heart"/>
-                  <i class="bx bx-plus-medical"/>
+                  <i class="bx bxs-share-alt" />
+                  <i class="bx bxs-heart" />
+                  <i class="bx bx-plus-medical" />
                 </div>
               </div>
             </div>
@@ -704,206 +700,206 @@
         <div id="tv-slider" class="movies-slide row">
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-9.jpg" alt="" >
+              <img src="~/assets/img/Images/post-9.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">wanda Vision</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="movie-item-overlay"/>
+            <div class="movie-item-overlay" />
             <div class="movie-item-act">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
 
               <div>
-                <i class="bx bxs-share-alt"/>
-                <i class="bx bxs-heart"/>
-                <i class="bx bx-plus-medical"/>
+                <i class="bx bxs-share-alt" />
+                <i class="bx bxs-heart" />
+                <i class="bx bx-plus-medical" />
               </div>
             </div>
           </a>
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-8.jpg" alt="" >
+              <img src="~/assets/img/Images/post-8.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">rumble</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="movie-item-overlay"/>
+            <div class="movie-item-overlay" />
             <div class="movie-item-act">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
 
               <div>
-                <i class="bx bxs-share-alt"/>
-                <i class="bx bxs-heart"/>
-                <i class="bx bx-plus-medical"/>
+                <i class="bx bxs-share-alt" />
+                <i class="bx bxs-heart" />
+                <i class="bx bx-plus-medical" />
               </div>
             </div>
           </a>
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-1.jpg" alt="" >
+              <img src="~/assets/img/Images/post-1.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">venon</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="movie-item-overlay"/>
+            <div class="movie-item-overlay" />
             <div class="movie-item-act">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
 
               <div>
-                <i class="bx bxs-share-alt"/>
-                <i class="bx bxs-heart"/>
-                <i class="bx bx-plus-medical"/>
+                <i class="bx bxs-share-alt" />
+                <i class="bx bxs-heart" />
+                <i class="bx bx-plus-medical" />
               </div>
             </div>
           </a>
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-11.jpg" alt="" >
+              <img src="~/assets/img/Images/post-11.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">luca</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="movie-item-overlay"/>
+            <div class="movie-item-overlay" />
             <div class="movie-item-act">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
 
               <div>
-                <i class="bx bxs-share-alt"/>
-                <i class="bx bxs-heart"/>
-                <i class="bx bx-plus-medical"/>
+                <i class="bx bxs-share-alt" />
+                <i class="bx bxs-heart" />
+                <i class="bx bx-plus-medical" />
               </div>
             </div>
           </a>
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/post-12.jpg" alt="" >
+              <img src="~/assets/img/Images/post-12.jpg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">annette</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="movie-item-overlay"/>
+            <div class="movie-item-overlay" />
             <div class="movie-item-act">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
 
               <div>
-                <i class="bx bxs-share-alt"/>
-                <i class="bx bxs-heart"/>
-                <i class="bx bx-plus-medical"/>
+                <i class="bx bxs-share-alt" />
+                <i class="bx bxs-heart" />
+                <i class="bx bx-plus-medical" />
               </div>
             </div>
           </a>
 
           <a href="#" class="movie-item col-3-5 m-5 s-11 to-top show-on-scroll">
             <div>
-              <img src="~/assets/img/Images/start-trek.jpeg" alt="" >
+              <img src="~/assets/img/Images/start-trek.jpeg" alt="" />
               <div class="movie-item-content">
                 <div class="movie-item-title">star trek Discovery</div>
 
                 <div class="movies-infors-card">
                   <div class="movies-infor">
-                    <ion-icon name="bookmark-outline"/>
+                    <ion-icon name="bookmark-outline" />
                     <span>9.0</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="time-outline"/>
+                    <ion-icon name="time-outline" />
                     <span>120 mins</span>
                   </div>
                   <div class="movies-infor">
-                    <ion-icon name="cube-outline"/>
+                    <ion-icon name="cube-outline" />
                     <span>FHD</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="movie-item-overlay"/>
+            <div class="movie-item-overlay" />
 
             <div class="movie-item-act">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
 
               <div>
-                <i class="bx bxs-share-alt"/>
-                <i class="bx bxs-heart"/>
-                <i class="bx bx-plus-medical"/>
+                <i class="bx bxs-share-alt" />
+                <i class="bx bxs-heart" />
+                <i class="bx bx-plus-medical" />
               </div>
             </div>
           </a>
@@ -922,7 +918,7 @@
       <div class="section-wrapper">
         <div class="section-header">hot movie</div>
         <div class="big-slide-item special-movie active to-top show-on-scroll">
-          <img src="~/assets/img/Images/black-banner.png" alt="Poster" >
+          <img src="~/assets/img/Images/black-banner.png" alt="Poster" />
 
           <div class="big-slide-item-content">
             <div class="item-content-wrapper">
@@ -930,15 +926,15 @@
 
               <div class="movies-infors">
                 <div class="movies-infor">
-                  <ion-icon name="bookmark-outline"/>
+                  <ion-icon name="bookmark-outline" />
                   <span>9.5</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="time-outline"/>
+                  <ion-icon name="time-outline" />
                   <span>120 mins</span>
                 </div>
                 <div class="movies-infor">
-                  <ion-icon name="cube-outline"/>
+                  <ion-icon name="cube-outline" />
                   <span>FHD</span>
                 </div>
               </div>
@@ -953,9 +949,9 @@
           </div>
 
           <div class="play-movies">
-            <div class="ring"/>
+            <div class="ring" />
             <a href="https://www.youtube.com/watch?v=qZuQc-GvRlk">
-              <i class="bx bxs-right-arrow"/>
+              <i class="bx bxs-right-arrow" />
             </a>
             <div class="btn-watch">
               <span>watch trailer</span>
@@ -986,13 +982,13 @@
             </p>
             <div class="social-list">
               <a href="#" class="social-item">
-                <i class="bx bxl-facebook"/>
+                <i class="bx bxl-facebook" />
               </a>
               <a href="#" class="social-item">
-                <i class="bx bxl-instagram"/>
+                <i class="bx bxl-instagram" />
               </a>
               <a href="#" class="social-item">
-                <i class="bx bxl-twitter"/>
+                <i class="bx bxl-twitter" />
               </a>
             </div>
           </div>
