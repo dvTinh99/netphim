@@ -839,7 +839,7 @@ a.movie-item:hover {
 }
 
 .footer .section-wrapper {
-  background-image: url(./img/Images/footer-bg.jpg);
+  background-image: url(~/assets/img/Images/footer-bg.jpg);
   border-radius: 12px;
   padding-left: 20px;
   border: 2px solid var(--main-color);
