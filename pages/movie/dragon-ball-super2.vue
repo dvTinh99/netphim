@@ -15,28 +15,27 @@
             <NuxtLink to="/" class="text-white hover:text-[#dd003f]">
               Trang chủ
             </NuxtLink>
-            <NuxtLink to="/gioi-thieu" class="text-white hover:text-[#dd003f]">
+            <NuxtLink class="text-white hover:text-[#dd003f]">
               Giới thiệu
             </NuxtLink>
-            <NuxtLink to="/kho-phim" class="text-white hover:text-[#dd003f]">
+            <NuxtLink class="text-white hover:text-[#dd003f]">
               Kho phim
             </NuxtLink>
             <NuxtLink
-              to="/phim-dien-anh"
               class="text-white hover:text-[#dd003f]"
             >
               Phim điện ảnh
             </NuxtLink>
-            <NuxtLink to="/phim-bo" class="text-white hover:text-[#dd003f]">
+            <NuxtLink class="text-white hover:text-[#dd003f]">
               Phim bộ
             </NuxtLink>
-            <NuxtLink to="/khuyen-mai" class="text-white hover:text-[#dd003f]">
+            <NuxtLink class="text-white hover:text-[#dd003f]">
               Khuyến mãi
             </NuxtLink>
-            <NuxtLink to="/tin-tuc" class="text-white hover:text-[#dd003f]">
+            <NuxtLink class="text-white hover:text-[#dd003f]">
               Tin tức
             </NuxtLink>
-            <NuxtLink to="/lien-he" class="text-white hover:text-[#dd003f]">
+            <NuxtLink class="text-white hover:text-[#dd003f]">
               Liên hệ
             </NuxtLink>
           </nav>
