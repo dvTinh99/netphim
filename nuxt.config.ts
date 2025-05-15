@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
   app: {
+    baseURL: '/netphim/',
     head: {
       title: 'Nuxt', // default fallback title
       htmlAttrs: {
