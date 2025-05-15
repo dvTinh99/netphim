@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   experimental: { appManifest: false },
   app: {
     baseURL: '/netphim/',
+    buildAssetsDir: 'assets/',
     head: {
       title: 'Nuxt', // default fallback title
       htmlAttrs: {
