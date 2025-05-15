@@ -6,6 +6,7 @@ export default defineNuxtConfig({
 
   app: {
     baseURL: '/netphim/',
+    buildAssetsDir: 'assets/',
     head: {
       title: 'Nuxt', // default fallback title
       htmlAttrs: {
