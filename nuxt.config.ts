@@ -4,9 +4,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2024-11-01',
 
+  experimental: { appManifest: false },
   app: {
     baseURL: '/netphim/',
-    buildAssetsDir: 'assets/',
     head: {
       title: 'Nuxt', // default fallback title
       htmlAttrs: {
